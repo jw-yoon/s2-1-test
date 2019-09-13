@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>상품의 원가를 구하라!</title>
+	<style>
+		body{height: 300px; background-color: blue; margin: 20px;}
+		.roll{background-color: white; margin: auto; height: 1000px; width:900px;padding: 20px;}
+		h1{font-size: 30px;}
+		h2{font-size: 18px;}
+		h3{font-size: 12px; text-align: right;}
+		p{font-size: 16px; text-align: center;}
+		.oo{background-color: lightpink; width: 350px; height: 300px; padding: 50px; margin: auto; text-align: center;}
+		
+	</style>
+</head>
+<body>
+	<div class="roll">
+		<h1>부가가치세 계산기</h1>
+
+		<h2>부가가치세: 부가가치세란 생산 및 유통의 각 단계에서 생성되는 부가가치에 대해 부과되는 조세이다. 일반소비세임과 동시에 그 세부담의 전가를 예상하는 간접세의 일종이다. 우리나라는 현재 재화 및 용역의 최종가격에 10%의 부가가치세가 포함된다.</h2>
+		<h3>출처: 네이버 시사상식사전</h3><br><br><br>
+		<p>그럼, 지금 우리가 결재한 것에는 얼마의 부가세가 붙어있는걸까요?<br> 부가세를 제외한 상품의 원가는 과연 얼마일까요?</p><br><br>
+
+	<div class="oo">
+		내가 결제한 금액<br>
+		<input type="text" placeholder="금액을 입력해주세요." id="cash" > 원 
+		<input type="button" value="확인" id="okbut"><br><br><br><br>
+		부가세는 얼마려나?
+		<div id="monitor"></div><br><br>
+		원가는 얼마려나?
+		<div id="monitor2"></div>
+
+		<script>
+			cash.onclick = function(){
+
+				var total1 = cash.value/10;
+				var total2 = cash.value - cas.value/10;
+				
+				monitor.innerHTML = total1; + "원";
+				monitor2.innerHTML =  total2; + "원";
+			}
+			
+
+			
+		</script>
+	</div>
+	</div>
+</body>
+</html>
